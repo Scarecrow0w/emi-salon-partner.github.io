@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-banner {
+  height: 530px;
+  background: url(https://emi-shop.ru/upload/rk/981/2021_Nude4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.add-banner {
+  height: 530px;
+  background: url(https://emi-shop.ru/upload/rk/b09/july_.jpg) no-repeat center center;
+  background-size: cover;  
+}
+
+.category-card {
+  @apply flex justify-center tracking-widest filter hover:brightness-75 items-center text-white text-lg uppercase;
+  width: 260px;
+  height: 330px;
+  background: url(https://goop-img.com/wp-content/uploads/2021/04/style.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.product-img {
+  background: url(https://emi-shop.ru/upload/rk/908/banner-capsule-2_2.jpg) no-repeat center center;
+  background-size: cover;;
+}
+
+.mySwiper {
+  height: 600px;
+}
+
+.swiper-slide {
+  @apply px-16 flex gap-5 pb-10
+}
+
+.swiper-card {
+  @apply flex flex-col flex-1 h-full
+}
