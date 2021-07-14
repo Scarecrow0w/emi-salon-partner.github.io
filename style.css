@@ -15,7 +15,7 @@
 }
 
 .category-card {
-  @apply flex justify-center tracking-widest filter hover:brightness-75 items-center text-white text-lg uppercase;
+  @apply flex items-center justify-center text-lg tracking-widest text-white uppercase filter hover:brightness-75;
   width: 260px;
   height: 330px;
   background: url(https://goop-img.com/wp-content/uploads/2021/04/style.jpg) no-repeat center center;
@@ -24,7 +24,7 @@
 
 .product-img {
   background: url(https://emi-shop.ru/upload/rk/908/banner-capsule-2_2.jpg) no-repeat center center;
-  background-size: cover;;
+  background-size: cover;
 }
 
 .mySwiper {
@@ -32,9 +32,22 @@
 }
 
 .swiper-slide {
-  @apply px-16 flex gap-5 pb-10
+  @apply flex gap-5 px-16 pb-10;
 }
 
 .swiper-card {
-  @apply flex flex-col flex-1 h-full
+  @apply flex flex-col flex-1 h-full;
 }
+
+.card-link {
+  @apply flex flex-col items-center;
+  width: 500px;
+  height: 780px;
+  background: url(https://emi-shop.ru/upload/rk/908/banner-capsule-2_2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+footer .links a, footer nav a {
+  @apply text-gray-300 hover:underline;
+}
+
