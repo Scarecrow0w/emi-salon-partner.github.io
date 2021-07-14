@@ -31,7 +31,6 @@
   }
   
   .card-link {
-    width: 500px;
     height: 780px;
   }
 
@@ -74,9 +73,10 @@
 }
 
 .card-link {
-  @apply flex flex-col items-center;  
+  @apply flex flex-col items-center flex-1;  
   background: url(https://emi-shop.ru/upload/rk/908/banner-capsule-2_2.jpg) no-repeat center center;
   background-size: cover;
+  min-width: 300px;
 }
 
 .card-link div {

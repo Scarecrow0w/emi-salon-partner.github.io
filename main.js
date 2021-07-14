@@ -19,8 +19,22 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelector('.main-banner').style.marginTop = document.querySelector('header').offsetHeight + 'px';
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".main-banner").style.marginTop =
+    document.querySelector("header").offsetHeight + "px";
+
+  let element = document.getElementById("test"),
+    elementOffset = 94.625;
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= elementOffset) {
+      if (!element.classList.contains("fixed")) {
+        element.classList.add("fixed");
+      }
+    } else {
+      element.classList.remove("fixed");
+    }
+  });
 });
 
 
