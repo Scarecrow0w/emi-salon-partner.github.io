@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@media screen and (max-width: 1023px) {
+  .banner-link {
+    height: 576px;
+  }
+
+  .swiper-slide.desktop-slide {
+    display: none;
+  }
+
+  .swiper-slide.mobile-slide {
+    display: flex;
+  }
+
+  .card-link {
+    width: 250px;
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-slide.desktop-slide {
+    display: flex;
+  }
+
+  .swiper-slide.mobile-slide {
+    display: none;
+  }
+  
+  .card-link {
+    width: 500px;
+    height: 780px;
+  }
+
+  .mySwiper {
+    height: 600px;
+  }
+}
+
 .main-banner {
   height: 530px;
   background: url(https://emi-shop.ru/upload/rk/981/2021_Nude4.jpg) no-repeat center center;
@@ -10,7 +48,7 @@
 
 .add-banner {
   height: 530px;
-  background: url(https://emi-shop.ru/upload/rk/b09/july_.jpg) no-repeat center center;
+  background: url(https://emi-shop.ru/upload/rk/981/2021_Nude4.jpg) no-repeat center center;
   background-size: cover;  
 }
 
@@ -27,12 +65,8 @@
   background-size: cover;
 }
 
-.mySwiper {
-  height: 600px;
-}
-
 .swiper-slide {
-  @apply flex gap-5 px-16 pb-10;
+  @apply flex gap-5 px-3 pb-10 lg:px-16;
 }
 
 .swiper-card {
@@ -40,14 +74,27 @@
 }
 
 .card-link {
-  @apply flex flex-col items-center;
-  width: 500px;
-  height: 780px;
+  @apply flex flex-col items-center;  
   background: url(https://emi-shop.ru/upload/rk/908/banner-capsule-2_2.jpg) no-repeat center center;
   background-size: cover;
+}
+
+.card-link div {
+  @apply flex flex-col items-center gap-5;
+}
+
+.card-link p {
+  @apply text-xl font-medium text-center text-white lg:text-4xl;
+}
+
+.card-link a {
+  @apply flex items-center justify-center w-32 h-8 text-sm uppercase bg-white shadow lg:text-base lg:w-40 lg:h-12 hover:shadow-lg;
 }
 
 footer .links a, footer nav a {
   @apply text-gray-300 hover:underline;
 }
 
+footer .links div {
+  @apply flex flex-col py-5 border-b border-gray-400 lg:border-none lg:p-0;
+}
