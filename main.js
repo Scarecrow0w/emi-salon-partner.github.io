@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".main-banner").style.marginTop =
     document.querySelector("header").offsetHeight + "px";
 
-  let element = document.getElementById("test"),
-    elementOffset = 94.625;
+  let navLinks = document.querySelector('#navLinks'),
+    navLinksOffset = 94.625;
 
   window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= elementOffset) {
-      if (!element.classList.contains("fixed")) {
-        element.classList.add("fixed");
+    if (window.pageYOffset >= navLinksOffset) {
+      if (!navLinks.classList.contains("fixed")) {
+        navLinks.classList.add("fixed");
       }
     } else {
-      element.classList.remove("fixed");
+      navLinks.classList.remove("fixed");
     }
   });
 });
