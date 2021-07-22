@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Emi | Салон-партнер</title>
-<script type="module" crossorigin src="/emi-salon-partner.github.io/assets/index.30da6289.js"></script>
-  <link rel="stylesheet" href="/emi-salon-partner.github.io/assets/index.515275ec.css">
+<script type="module" crossorigin src="/emi-salon-partner.github.io/assets/index.00746e87.js"></script>
+  <link rel="stylesheet" href="/emi-salon-partner.github.io/assets/index.308972d1.css">
 </head>
 
 <body>
-  <header class="flex flex-col items-center w-full gap-6 text-white bg-black h-36 ">
-    <div class="flex items-center justify-between w-3/5 mt-5">
-      <div class="flex justify-center flex-1">
+  <header class="fixed z-50 flex flex-col items-center w-full gap-6 py-5 text-white bg-black lg:static lg:py-0 lg:h-36 ">
+    <div class="z-50 flex items-center justify-between w-full lg:mt-5 xl:w-3/5">
+      <div class="justify-center flex-1 hidden lg:flex">
         <nav>
           <ul class="flex gap-4">
             <li><a href="#" class="hover:underline">link</a></li>
@@ -23,8 +23,8 @@
           </ul>
         </nav>
       </div>
-      <div class="flex justify-center flex-1">
-        <a id="navLogo" href="#" class="w-52">
+      <div class="flex flex-1 lg:justify-center">
+        <a id="navLogo" href="#" class="ml-5 w-52 lg:ml-0">
           <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" style="fill: white;" viewBox="0 0 517.58 125.97" xml:space="preserve">
             <g>
@@ -104,7 +104,7 @@
           </svg>
         </a>
       </div>
-      <div class="flex justify-center flex-1">
+      <div class="justify-center flex-1 hidden lg:flex">
         <nav>
           <ul class="flex gap-4">
             <li><a href="#" class="hover:underline">log in</a></li>
@@ -113,17 +113,24 @@
           </ul>
         </nav>
       </div>
+      <div class="flex justify-end flex-1 lg:hidden">
+        <button id="menuBtn" class="flex items-center justify-center mr-5 hamburger focus:outline-none" type="button">
+          <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+        </button>
+      </div>
     </div>
-    <div id="navLinks" class="z-50 flex items-center justify-center w-full h-12 bg-black">
+    <div id="navLinks" class="z-40 items-center justify-center hidden w-full bg-black lg:h-12 lg:flex">
       <nav>
-        <ul class="flex h-full uppercase">
-          <li class="px-6"><a href="#">link</a></li>
-          <li class="px-6"><a href="#">link</a></li>
-          <li class="px-6"><a href="#">link</a></li>
-          <li class="px-6"><a href="#">link</a></li>
-          <li class="px-6"><a href="#">link</a></li>
-          <li class="px-6"><a href="#">link</a></li>
-          <li class="px-6"><a href="#">link</a></li>
+        <ul class="flex flex-col h-full gap-5 text-center uppercase lg:gap-0 lg:flex-row">
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:px-6"><a href="#">link</a></li>
+          <li class="lg:hidden"><a href="#" class="hover:underline">log in</a></li>
+          <li class="lg:hidden"><a href="#" class="hover:underline">sign up</a></li>
         </ul>
       </nav>
     </div>
