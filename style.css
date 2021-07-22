@@ -98,3 +98,73 @@ footer .links a, footer nav a {
 footer .links div {
   @apply flex flex-col py-5 border-b border-gray-400 lg:border-none lg:p-0;
 }
+
+/* HAMBURGER MENU START */
+
+.hamburger {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: all 0.25s;
+}
+ 
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger:hover [class*="-bun"] {
+  background: #fff;
+}
+
+.hamburger__top-bun {
+  transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+  transform: translateY(3px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+  transform:
+    rotate(45deg)
+    translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+  transform:
+    rotate(-45deg)
+    translateY(0px);
+}
+
+/* HAMBURGER MENU END */
+
+.slidedown {
+  animation: slidedown 0.35s;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.logo-min {
+  top: 5px;
+  left: 18px;
+  width: 150px;
+}
